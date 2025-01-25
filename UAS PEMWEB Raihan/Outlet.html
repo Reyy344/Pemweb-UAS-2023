@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laundry Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Pilih Pemesanan</h1>
+  </header>
+
+  <main>
+    <form id="orderForm">
+      <h2>Pilih Layanan:</h2>
+      <label for="serviceType">Jenis Layanan:</label>
+      <select id="serviceType" name="serviceType">
+        <option value="cuci_kering">Cuci Kering</option>
+        <option value="cuci_basah">Cuci Basah</option>
+        <option value="setrika">Setrika</option>
+      </select>
+
+      <label for="quantity">Jumlah Pakaian:</label>
+      <input type="number" id="quantity" name="quantity">
+
+      <h2>Informasi Kontak:</h2>
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="phone">Nomor Telepon:</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="address">Alamat:</label>
+      <textarea id="address" name="address"></textarea>
+
+      <button type="submit">Pesan Sekarang</button>
+    </form>
+
+    <div id="costEstimation">
+      <h2>Perkiraan Biaya:</h2>
+      <p id="estimatedCost">-</p>
+    </div>
+  </main>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
